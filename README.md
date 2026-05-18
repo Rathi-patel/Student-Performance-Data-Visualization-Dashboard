@@ -132,7 +132,7 @@ Displays uploaded dataset records directly inside the dashboard.
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 
 ### Home Page
 
