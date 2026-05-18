@@ -262,5 +262,5 @@ Step 8: Dataset Preview Rendered
 
 ## Testing
 
-Application testing and validation supported by [TestGrid.io](https://testgrid.io)
+Application functionality tested using [TestGrid.io](https://testgrid.io)
 
