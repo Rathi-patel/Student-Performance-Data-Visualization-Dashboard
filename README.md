@@ -1,10 +1,10 @@
-# 📊 CSV Analytics Dashboard
+# CSV Analytics Dashboard
 
 A modern CSV analytics platform built using FastAPI, HTML, CSS, and JavaScript that transforms uploaded datasets into interactive visualizations and meaningful insights. Users can upload CSV files and instantly explore statistics, charts, and structured data through a rich dashboard interface.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 CSV Analytics Dashboard is designed to simplify data understanding through visual analytics. The application accepts CSV datasets, processes them through FastAPI and Pandas, and dynamically generates charts and dashboard statistics.
 
@@ -12,7 +12,7 @@ The platform provides an intuitive interface with a modern glassmorphism-inspire
 
 ---
 
-## ✨ Features
+## Features
 
 ✔ Dynamic CSV Upload System  
 
@@ -36,27 +36,7 @@ The platform provides an intuitive interface with a modern glassmorphism-inspire
 
 ---
 
-## 🖼 Application Workflow
-
-```text
-User Uploads CSV
-        ↓
-FastAPI Receives Dataset
-        ↓
-Pandas Processes Data
-        ↓
-API Generates Structured Response
-        ↓
-Frontend Receives Data
-        ↓
-Dashboard Updates Automatically
-        ↓
-Charts + Statistics + Preview Generated
-```
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```text
 csv-analytics-dashboard/
@@ -76,9 +56,8 @@ csv-analytics-dashboard/
 └── README.md
 ```
 
----
 
-## ⚙ Technology Stack
+## Technology Stack
 
 ### Backend
 
@@ -104,7 +83,7 @@ csv-analytics-dashboard/
 
 ---
 
-## 📄 Required CSV Format
+## Required CSV Format
 
 The dashboard expects datasets following this structure:
 
@@ -129,7 +108,7 @@ Once uploaded, the dashboard automatically processes these fields and generates 
 
 ---
 
-## 📈 Dashboard Components
+## Dashboard Components
 
 ### Statistics Cards
 
@@ -185,7 +164,7 @@ Displays uploaded dataset records directly inside the dashboard.
   <img src="assets/data preview.png" width="900">
 </p>
 
-## ⚙ Installation Guide
+## Installation Guide
 
 Clone repository:
 
@@ -216,7 +195,7 @@ pip install python-multipart
 
 ---
 
-## ▶ Run Backend Server
+## Run Backend Server
 
 Move into backend:
 
@@ -261,7 +240,7 @@ http://localhost:5500
 
 ---
 
-## 🔄 User Flow
+## User Flow
 
 Step 1: Open Dashboard  
 
@@ -281,28 +260,7 @@ Step 8: Dataset Preview Rendered
 
 ---
 
-## 🧪 Website Testing
+## Testing
 
-The CSV Analytics Dashboard was validated using TestGrid to verify overall website functionality and user interaction flow.
+Application testing and validation supported by [TestGrid.io](https://testgrid.io)
 
-Testing focused on validating:
-
-✔ CSV upload workflow  
-
-✔ Dashboard rendering  
-
-✔ Chart generation  
-
-✔ API communication  
-
-✔ Dynamic updates after upload  
-
-✔ Dataset preview functionality  
-
-✔ User interaction flow  
-
-Testing Platform:
-
-[TestGrid](https://testgrid.io/)
-
-This validation process helped ensure that the complete dashboard workflow operates smoothly from dataset upload through visualization generation.
