@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>CSV Analytics Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+
+<header class="hero">
+
+<div class="heroText">
+
+<h1>
+📊 CSV Analytics Dashboard
+</h1>
+
+<p>
+
+Transform raw CSV files into beautiful interactive visualizations. Upload a dataset and instantly explore statistics, charts, trends, and insights from your data.
+
+</p>
+
+</div>
+
+<div class="heroGlow"></div>
+
+</header>
+
+
+
+<div class="infoGrid">
+
+
+<div class="infoCard">
+
+<div class="topIcon">
+
+🚀
+
+</div>
+
+<h2>
+About Platform
+</h2>
+
+<p>
+
+This platform automatically converts uploaded CSV files into visual analytics dashboards. Data is processed instantly and represented through dynamic charts, summary cards, and previews to simplify understanding large datasets.
+
+</p>
+
+</div>
+
+
+<div class="infoCard">
+
+<div class="topIcon">
+
+📄
+
+</div>
+
+<h2>
+Required CSV Format
+</h2>
+
+<p>
+
+Upload a CSV using columns Name, Marks, Attendance and Subject. Once uploaded, statistics and visual reports are generated automatically.
+
+</p>
+
+<pre>
+
+Name,Marks,Attendance,Subject
+Amit,78,90,Math
+Riya,85,95,Science
+Jay,65,82,Math
+Neha,92,98,English
+
+</pre>
+
+</div>
+
+</div>
+
+
+
+
+<div class="uploadBox">
+
+<h2>
+Upload Dataset
+</h2>
+
+<p>
+
+Select your CSV file to activate analytics and charts.
+
+</p>
+
+<input
+type="file"
+id="csvFile">
+
+<button
+onclick="uploadCSV()">
+
+Upload CSV
+
+</button>
+
+</div>
+
+
+
+<div class="stats">
+
+<div class="card">
+
+<div class="emoji">
+
+👨‍🎓
+
+</div>
+
+<h2 id="total">
+
+0
+
+</h2>
+
+<p>
+Total Students
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="emoji">
+
+📈
+
+</div>
+
+<h2 id="avg">
+
+0
+
+</h2>
+
+<p>
+Average Marks
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="emoji">
+
+🏆
+
+</div>
+
+<h2 id="high">
+
+0
+
+</h2>
+
+<p>
+Highest Score
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="emoji">
+
+📉
+
+</div>
+
+<h2 id="low">
+
+0
+
+</h2>
+
+<p>
+Lowest Score
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="charts">
+
+<div class="chart-card">
+
+<h3>
+Marks Analysis
+</h3>
+
+<canvas
+id="marksChart">
+
+</canvas>
+
+</div>
+
+
+
+<div class="chart-card">
+
+<h3>
+Attendance Trend
+</h3>
+
+<canvas
+id="attendanceChart">
+
+</canvas>
+
+</div>
+
+</div>
+
+
+
+<div class="tableCard">
+
+<h2>
+Dataset Preview
+</h2>
+
+<table
+id="preview">
+
+</table>
+
+</div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
